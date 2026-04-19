@@ -55,16 +55,13 @@ resource "azurerm_storage_account" "example" {
 terraform {
   cloud {
     organization = "demo1303"
-    hostname = "app.terraform.io" # Optional; defaults to app.terraform.io
 
     workspaces {
       project = "demo"
-
       tags = {
-        layer = "networking"
+        layer  = "networking"
         source = "cli"
       }
     }
   }
 }
-
