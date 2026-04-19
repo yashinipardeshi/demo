@@ -28,10 +28,7 @@ provider "azurerm" {
   subscription_id = var.subscription_id
 }
 
-variable "client_id"       {}
-variable "client_secret"   { sensitive = true }
-variable "tenant_id"       {}
-variable "subscription_id" {}
+
 
 resource "azurerm_resource_group" "demo" {
   name     = "azure-terraform-git"
