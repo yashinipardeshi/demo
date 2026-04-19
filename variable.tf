@@ -28,3 +28,8 @@ variable "subnet_prefixes" {
   description = "Subnet CIDRs"
   type        = list(string)
 }
+variable "storage_access_key" {
+  description = "Azure Storage Account Access Key"
+  sensitive   = true
+  # No default! Value comes from HCP Terraform workspace variables
+}
