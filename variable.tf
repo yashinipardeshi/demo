@@ -1,8 +1,3 @@
-variable "storage_access_key" {
-  description = "Azure Storage Account Access Key"
-  default = "REDACTED"
-  sensitive   = true
-}
 
 variable "resource_group_name" {
   description = "Resource group name"
